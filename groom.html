@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="groom.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Groom Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+      <div id="calculator">
+      <h3 style="text-align: center;font-weight: bold;">Groom Calculator</h3>
+      <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);;"></p>
+     <div class="Content">
+      <label for="price">Groom's name:</label><br>
+        <button><i class="fas fa-bell"></i></button><input type="text" id="name">
+         </div>
+        <div class="Content">
+     <label for="price">Starting Bid</label><br>
+     <button><i class="fas fa-dollar-sign"></i></button>
+     <input type="text" id="Bid" name="firstPrice">
+      </div>
+                    <div class="Content">
+                     <label for="education" id="educ">Grooms education:</label><br>
+                        <select id="education">
+                        <option value="blank"></option>
+                        <option value="1.5">Undergraduate degree(coefficient 1.5)</option>
+                        <option value="1.2">College degree(coefficient 1.2)</option>
+                        <option value="1.05">High school degree (coefficient 1.05)</option>
+                        <option value="0.9">Middle school degree (coefficient 0.9)</option>
+                        </select>
+                        </div>
+                       <div class="Content">
+                       <label for="family">Groom's family net worth </label><br>
+                         <select id="networth">
+                        <option value="blank"></option>
+                        <option value="2">More than 100,000$</option>
+                        <option value="1.5">Between 50,000$ and 100,000$</option>
+                         <option value="1.2">Less than 50,000$</option>
+                        </select>
+                       </div> 
+                       <div class="Content">
+                        <label for="caste">Caste:</label><br>
+                        <select id="caste">
+                            <option disabled selected value="0">Choose...</option>
+                            <option value="+100$">Brahmin</option>
+                            <option value="+50$">Kshatriya</option>
+                            <option value="+20$">Vaishya</option>
+                            <option value="+10$">Shudra </option>
+                            <option value="-50$">Varna </option>
+                        </select>
+                       </div>
+                       <div class="Content">
+                        <label for="skills">Groom's skills:</label><br>
+                        <div>
+                            <input type="checkbox" id="musician" name="checker1">
+                            <span class = "sub__text">Playing on a musical instrument
+                            </span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checker1">
+                            <span class = "sub__text">Good cook
+                            </span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checker1">
+                            <span class = "sub__text">Easygoing character
+                            </span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checker1">
+                            <span class = "sub__text">Sings well
+                            </span>
+                    </div>
+                   </div>
+                   <div class="Content">
+                    <label for="age">Groom's age:</label><br>
+                    <div>
+                        <input type="radio" id="Between18-23" name="sub">
+                        <span class = "sub__text">Between 18-23</span>
+                    </div>
+                    <div>
+                        <input type="radio" id="Between24-27" name="sub">
+                        <span class ="sub__text">Between 24-27</span>
+                    </div>
+                    <div>
+                    <input type="radio" id="28+" name="sub">
+                    <span class ="sub__text">28+ </span>
+                    </div>
+                </div>
+                <div class="Content">
+                    <label for="reputation">Groom's reputation</label><br>
+                    <div>
+                        <input type="checkbox" name="verify">
+                        <span class = "sub__text">Gossips about his parent's attitude</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="verify">
+                        <span class = "sub__text">Gossips about his character</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="verify">
+                        <span class = "sub__text">General gossips around his person</span>
+                    </div> 
+                </div>
+                <div class="Content">
+                <label for="text">Love letter:</label>
+                <textarea id="text" name="text">
+                </textarea>
+                </div>
+            
+            <div style="text-align: center">
+                
+                <p style="border-top: 2px solid rgba(211, 211, 211, 0.5);"></p>
+                <button onclick="calculate()" style="border-radius: 5px;width:fit-content;">Calculate</button>
+                <div id="Calculateprice" class="text-center"></div>
+                </div>
+            
+                </div>
+                </div>
+                <div id="Groom-bid"></div>
+                </div>
+                </main>
+              
+                    </div>
+
+
+    </main>
+    <script src="script.js"></script>
+
+  </body>
+    
+</body>
+</html>
